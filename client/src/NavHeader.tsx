@@ -7,7 +7,6 @@ export class NavHeader extends Component {
       <nav>
         <ul>
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/profile">My profile</Link></li>
           <li><Link to="/feed">My feed</Link></li>
         </ul>
       </nav>
