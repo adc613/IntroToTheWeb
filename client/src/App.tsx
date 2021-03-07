@@ -1,28 +1,29 @@
-import React from 'react';
 import './App.css';
-import NavHeader from './NavHeader';
+
+import {Component} from 'react';
+import {NavHeader} from './NavHeader';
 import {Switch, Route, BrowserRouter as Router} from 'react-router-dom';
+import {Profile} from './profile/Profile';
+import {Feed} from './feed/Feed';
+import {Home} from './home/Home';
 
-function App() {
-  return (
-    <Router>
-      <NavHeader></NavHeader>
-      <Switch>
-        <Route path="/profile">
-          <h1>Profile</h1>
-        </Route>
-        <Route path="/feed">
-          <h1>Feed</h1>
-        </Route>
-        <Route path="/post">
-          <h1>Post</h1>
-        </Route>
-        <Route path="/">
-          <h1>Home</h1>
-        </Route>
-      </Switch>
-    </Router>
-  );
+export class App extends Component {
+  render() {
+    return (
+      <Router>
+        <NavHeader></NavHeader>
+        <Switch>
+          <Route path="/profile">
+            <Profile></Profile>
+          </Route>
+          <Route path="/feed">
+            <Feed></Feed>
+          </Route>
+          <Route path="/">
+            <Home></Home>
+          </Route>
+        </Switch>
+      </Router>
+    );
+  }
 }
-
-export default App;
