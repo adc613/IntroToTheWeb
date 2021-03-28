@@ -14,7 +14,7 @@ export function getPosts(): Promise<Post[]> {
     const posts:Post[] = resp.data;
     return posts
   }).catch((err) => {
-    alert("Error getting posts");
+    alert("Error getting posts: " + err);
     return [];
   });
 }
@@ -23,7 +23,7 @@ export function createPost(content: string, author: string): Promise<Post[]> {
   return axios.post(DOMAIN + '/posts', {content, author}).then(resp => {
     return getPosts();
   }).catch((err) => {
-    alert("Error creating posts");
+    alert("Error creating posts: " + err);
     return getPosts();
   });
 }
