@@ -8,6 +8,8 @@ db.connect('./db')
 const PORT = 8080
 const app = express();
 app.use(bodyParser());
+var cors = require('cors');
+app.use(cors());
 
 interface Post {
   content: string;
