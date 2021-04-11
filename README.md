@@ -5,4 +5,4 @@ Adam post all of the class notes and solutions.
 
 ## Notes
 
-* [Week 1: Our first webstie](/notes/week1.md)
+* [Week 1: Our first website](/notes/week1/summary.md)
