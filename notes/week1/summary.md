@@ -33,3 +33,7 @@ Ideas for what your could add to your site:
   centering text horizontally and vertically on the page.
 * Checkout [Codepen](http://codepen.io) to see cool example of what people are
   building using HTML/CSS (and a little bit of JavaScript).
+
+
+
+[Next section: Install software](/notes/week1/install.md)
