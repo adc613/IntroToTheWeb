@@ -115,3 +115,5 @@ This snippet of CSS code would give all `h1` components a font size of 96px and
 a font of Roboto. Then everyth componetn wit hthe CSS class "red" would be given
 a color of "red" and a font-weight of 700.
 
+
+[Next section: styling our site](/notes/week1/html_css.md)
