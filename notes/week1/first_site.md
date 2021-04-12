@@ -60,7 +60,7 @@ git config --global user.name "<your name>"
 17. Name the remote branch "origin" then press Enter
 18. In the 3 dot menu click `Push` (if prompted, authorize any GitHub logins in VS Code)
 19. Go back to Chrome and refresh the page. You should now see index.html.
-20. Navigate to "username".github.io and look at your beatiful new website!
+20. Navigate to `<username>`.github.io and look at your beatiful new website!
 
 
 [Next section: Learning HTML/CSS](/notes/week1/html_css.md)
