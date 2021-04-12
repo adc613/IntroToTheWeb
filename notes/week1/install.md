@@ -20,8 +20,8 @@ it's not there talk to Coach Peter/Adam.
 
 ### git
 
-Open termainal or PowerShell on windows and enter the commadn `git --vesrion`.
-If yous see a version number your good to go. If you see `command not found`
+Open terminal or PowerShell on windows and enter the command `git --version`.
+If you see a version number you're good to go. If you see `command not found`
 talk to Coach Peter or Coach Adam.
 
 [Next section: our first site](/notes/week1/first_site.md)
