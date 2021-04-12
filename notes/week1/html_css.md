@@ -129,4 +129,4 @@ a font of Roboto. Then every component with the CSS class "red" would be given
 a color of "red" and a font-weight of 700.
 
 
-[Next section: styling our site](/notes/week1/html_css.md)
+[Next section: styling our site](/notes/week1/styling_our_site.md)
