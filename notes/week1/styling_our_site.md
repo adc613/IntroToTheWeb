@@ -11,3 +11,5 @@
 1. Navigate to your website and marvel in its glory
 
 **Congratuations** You now know HTML and CSS!
+
+[Next section: At home challenge](/notes/week1/challenge.md)
