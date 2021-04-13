@@ -34,7 +34,7 @@ link that points to the Google homepage:
 Components can have many attribute names, for example:
 
 ```html
-<button class="big" id="my-submit" click="hello()" type="submit">Submit</button>
+<button class="big" id="my-submit" click="alert('Pizza!!!!')" type="submit">Submit</button>
 ```
 
 This button has 4 attributes (class, id, click, and type) and each attirbute is
