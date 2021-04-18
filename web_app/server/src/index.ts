@@ -17,7 +17,7 @@ interface Post {
 }
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send("Hello Wold!");
 });
 
 app.get("/posts", (req, res) => {
