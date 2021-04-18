@@ -2,7 +2,7 @@
 *If you're running ChromeOS or are having trouble installing everything follow
 the [alternative instructions](/notes/week2/repl.it.md)*
 
-1. Install Node [download link](https://nodejs.org/en/download/kj)
+1. Install Node [download link](https://nodejs.org/en/download)
   * Install the LTS version
 
 ## Verify installation
