@@ -1,6 +1,6 @@
 # Install all the Software
 *If you're running ChromeOS or are having trouble installing everything follow
-the [alternative instructions](/notes/week2/repl.it.md)*
+the [alternative instructions](/notes/week2/replit.md)*
 
 1. Install Node [download link](https://nodejs.org/en/download)
   * Install the LTS version
