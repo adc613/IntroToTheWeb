@@ -1,18 +1,22 @@
 // Variables
 //
-let bar: boolean = true;
-let foo: number = 0;
-let word: string = "hello";
+let isPeterHonest: boolean;
+let ageOfPeter: number;
+let petersNickname: string ;
 
-if(bar) {
-  console.log("Bar is true");
+isPeterHonest = true
+ageOfPeter = 9580;
+petersNickname = "MEGAPeter"
+
+if(isPeterHonest) {
+  console.log("Peter is telling the truth");
 } else {
-  console.log("Bar is false");
+  console.log("Peter is guilty");
 }
 
-console.log(word);
-console.log(foo);
-console.log(foo + word);
+console.log(petersNickname);
+console.log(ageOfPeter);
+console.log("Peter is " + ageOfPeter + " days old and he goes by " + petersNickname);
 
 
 
