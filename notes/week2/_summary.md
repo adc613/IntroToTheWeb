@@ -1,4 +1,4 @@
-# Week 2: More HTML/CSS and into to Typescript
+# Week 2: More HTML/CSS and Intro to Typescript
 
 ## Overview
 
