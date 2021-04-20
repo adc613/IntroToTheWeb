@@ -10,3 +10,5 @@
 1. Create a index.ts file and add `console.log("hello world")`
 1. Run `npm run start` and "hello world" should print in the terminal.
 
+
+[Next section: Variables](/notes/week2/varaibles.md)
