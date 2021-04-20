@@ -11,4 +11,4 @@
 1. Run `npm run start` and "hello world" should print in the terminal.
 
 
-[Next section: Variables](/notes/week2/varaibles.md)
+[Next section: Variables](/notes/week2/variables.md)
