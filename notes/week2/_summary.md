@@ -1,4 +1,4 @@
-# Exercise 2: More HTML/CSS and Intro to Typescript
+# Exercise 2:  Intro to Typescript
 
 ## Overview
 
