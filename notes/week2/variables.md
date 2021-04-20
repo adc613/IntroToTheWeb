@@ -9,17 +9,17 @@ You can do that by using the `let` keywords:
 let meaningOfLife: number;
 ```
 
-To break down this  declaration. We're declaring a variable named `meaningOfLife`
-and we're saying this variable is a number meaning we can only assign numbers to
-it.
+Let's break down this declaration. We're declaring a variable named `meaningOfLife`.
+We're also saying this variable's type is `number`, so we can only assign numbers
+(i.e. 1, 2, 3) to it.
 
 ## Assignment
 
-Assignment is done using `=`. Once a variable is declared your fee to assign any
+Assignment is done using `=`. Once a variable is declared your free to assign any
 value to it as long as it matches the type of the variable.
 
 ```ts
-meaningOfLife = 42
+meaningOfLife = 42;
 ```
 
 ## Types
@@ -29,7 +29,7 @@ example this code will throw an error when we try to run it:
 
 ```ts
 let meaningOfLife: number;
-meaningOfLife = "Code is life"
+meaningOfLife = "Code is life";
 ```
 
 The three most important types in TypeScript are:
