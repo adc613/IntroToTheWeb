@@ -1,7 +1,6 @@
 # Our first TS app
 
-1. Make a new folder name `CodeBest` 
-1. Open that folder in VS Code
+1. Open VS Code
 1. Open a terminal
 1. Run `npm init` and press Enter for each question this will select the defaults.
 1. Run `npm i ts-node typescript`
