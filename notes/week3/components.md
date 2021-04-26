@@ -6,7 +6,7 @@
 To create a components you create a new TypeScript class that extends `React.Copmonent`.
 
 1. In src/App.tsx add this class:
-  ```typescript
+  ```tsx
   class MyFirstComponent extends React.Component {
     render() {
       return (
@@ -17,7 +17,7 @@ To create a components you create a new TypeScript class that extends `React.Cop
   ```
 1. Then inside  your main App function. Add your component like so:
 
-```
+```tsx
 function App() {
   return (
     <div className="App">
@@ -51,7 +51,7 @@ Note: The component name is the name of your class.
 One cool things you can do with components is pass in inputs called props. This
 allows you to reuse components and customize their behavior for each use case.
 
-```typescript
+```tsx
 interface PostProps {
   content: string;
   author: stirng;
@@ -137,7 +137,7 @@ export default App;
 ## Changing state
 
 
-```typescript
+```tsx
 class Post extends React.Component<PostProps, PostState> {
   constructor(props: PostProps) {
     super(props);
