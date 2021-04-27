@@ -45,6 +45,8 @@ function App() {
 
 Note: The component name is the name of your class.
 
+Try adding your own content to `<MyFirstComponent>`.
+
 
 ## Props
 
@@ -98,9 +100,13 @@ function App() {
 }
 ```
 
+Try adding your own prop to Post. One suggestion would be to add a date and time
+input.
+
 ## State
 
-State can be used to keep track of things
+State can be used to keep track of values that change over time. For example we
+can add a `numberOfLikes` field to our state object and then render our component
 
 
 ```tsx
@@ -134,8 +140,13 @@ class Post extends React.Component<PostProps, PostState> {
 export default App;
 ```
 
+Try adding a `numberOfDislikes` field to your state.
+
 ## Changing state
 
+
+State can be changed on any component by using the `this.setState()` method.
+In this example we add a like button.
 
 ```tsx
 class Post extends React.Component<PostProps, PostState> {
@@ -160,3 +171,5 @@ class Post extends React.Component<PostProps, PostState> {
   }
 }
 ```
+
+Try adding a dislike button.
