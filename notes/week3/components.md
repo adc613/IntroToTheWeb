@@ -23,7 +23,7 @@ class MyFirstComponent extends React.Component {
   }
 }
 ```
-1. Then inside  your main App function. Add your component like so:
+2. Then inside  your main App function. Add your component like so:
 
 ```tsx
 function App() {
@@ -73,8 +73,8 @@ See this all in action below:
 ```tsx
 // This is the interface that defines the props we are taking in.
 interface PostProps {
-  content: string;
   author: string;
+  content: string;
 }
 
 // Here, we are saying the type of our props is "PostProps"
@@ -84,8 +84,8 @@ class Post extends React.Component<PostProps> {
     // We can access the variables by surrounding them with curly brackets: {}
     return (
       <div>
+        <h6>{this.props.author}:</h6>
         <p>{this.props.content}</p>
-        <h6>{this.props.author}</h6>
       </div>
     )
   }
@@ -123,48 +123,57 @@ input.
 
 ## State
 
-State can be used to keep track of values that change over time. For example we
-can add a `numberOfLikes` field to our state object and then render our component
+**State** can be used to keep track of values that change over time. Like props,
+you must declare an interface for the state, and specify that interface when declaring
+your component.
 
+Unlike props, state cannot be specified when adding your component to the HTML. However,
+the value of the state can be changed, unlike props.
+
+For example we can add a `numberOfLikes` field to our state object and 
+then render our component:
 
 ```tsx
 interface PostProps {
-  content: string;
   author: string;
+  content: string;
 }
 
 interface PostState {
-  content: string;
-  author: string;
+  numberOfLikes: number;
 }
 
+// When adding state, specify the state type after the props type, like here.
 class Post extends React.Component<PostProps, PostState> {
-  constructor() {
-    super();
+  // We add a constructor to set the initial state. We also have to
+  // explicitly call super() this time!
+  constructor(props: PostProps) {
+    super(props);
     this.state = {numberOfLikes: 0}
   }
 
+  // Notice how we say "this.state" instead of "this.props" to access the state.
   render() {
     return (
       <div>
+        <h6>{this.props.author}:</h6>
         <p>{this.props.content}</p>
-        <h6>{this.props.author}</h6>
         <b> Your post has {this.state.numberOfLikes} likes </b>
       </div>
     )
   }
 }
 
-export default App;
+// ...
 ```
 
 Try adding a `numberOfDislikes` field to your state.
 
 ## Changing state
 
-
 State can be changed on any component by using the `this.setState()` method.
-In this example we add a like button.
+In this example we create a function called `addLike` which increases the
+`numberOfLikes` by one. We then call this function when a button is pressed.
 
 ```tsx
 class Post extends React.Component<PostProps, PostState> {
@@ -172,16 +181,20 @@ class Post extends React.Component<PostProps, PostState> {
     super(props);
     this.state = {numberOfLikes: 0}
   }
+  
+  // We change the state here by calling setState, and sending in a
+  // new state object.
+  addLike() {
+    this.setState({numberOfLikes: this.state.numberOfLikes + 1});
+  }
 
   render() {
     return (
       <div>
+        <h6>{this.props.author}:</h6>
         <p>{this.props.content}</p>
-        <h6>{this.props.author}</h6>
         <b> Your post has {this.state.numberOfLikes} likes </b>
-        <button
-          onClick={() => this.setState({numberOfLikes: this.state.numberOfLikes + 1})}
-        >
+        <button onClick={() => this.addLike()}>
           Like
         </button>
       </div>
