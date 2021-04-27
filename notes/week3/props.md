@@ -62,3 +62,5 @@ function App() {
 
 Try adding your own prop to Post. One suggestion would be to add a date and time
 input.
+
+[Next Exercise: Stay tuned for State!](/notes/week3/state.md)
