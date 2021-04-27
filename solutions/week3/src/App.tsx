@@ -1,37 +1,38 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Testing 1, 2, 3
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <MyFirstComponent></MyFirstComponent>
-        <Post author="Adam" content="My first post"></Post>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <header className="App-header">
+          <Switch>
+            <Route path="/post">
+              <Post author="Adam" content="My first post"></Post>
+            </Route>
+            <Route path="/">
+              <MyFirstComponent></MyFirstComponent>
+            </Route>
+          </Switch>
+        </header>
+      </div>
+    </Router>
   );
 }
 
 class MyFirstComponent extends React.Component {
   render() {
     return (
-      <p>My First Component</p>
+      <div>
+        <p>My First Component</p>
+        <Link to="/post"> Go to post </Link>
+      </div>
     )
   }
 }
+
 interface PostProps {
   content: string;
   author: string;
@@ -59,6 +60,7 @@ class Post extends React.Component<PostProps, PostState> {
         >
           Like
         </button>
+        <Link to="/"> Go to home </Link>
       </div>
     )
   }

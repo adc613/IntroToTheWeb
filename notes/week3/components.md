@@ -103,7 +103,7 @@ function App() {
 State can be used to keep track of things
 
 
-```typescript
+```tsx
 interface PostProps {
   content: string;
   author: string;
