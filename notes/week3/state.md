@@ -81,3 +81,5 @@ class Post extends React.Component<PostProps, PostState> {
 ```
 
 Try adding a dislike button.
+
+[Next Exercise: The React Router](/notes/week3/router.md)
