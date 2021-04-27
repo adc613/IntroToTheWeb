@@ -13,6 +13,7 @@ The goal for this week:
 1. [Variables](/notes/week2/variables.md)
 1. [If statements](/notes/week2/if.md)
 1. [Functions](/notes/week2/functions.md)
+1. [Interfaces](/notes/week2/interfaces.md)
 1. [Classes](/notes/week2/classes.md)
 
 

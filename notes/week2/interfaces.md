@@ -43,3 +43,6 @@ console.log(myVariable.aString) // "Hello world"
 
 Now try creating your own Person interface. It should have at least 1 string,
 1 boolean, and 1 number. Instantiate it and print one of the fields.
+
+
+[Next exercise: Classes](/notes/week2/classes.md)

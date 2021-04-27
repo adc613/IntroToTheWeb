@@ -35,5 +35,5 @@ As an exercise, can you create a function called `logIf`? This function should t
 and a `string`, as arguments, and should print the string to the console only if the `boolean` argument
 is true. Then call the function with different inputs!
 
-[Next exercise: Classes](/notes/week2/classes.md)
+[Next exercise: Interfaces](/notes/week2/interfaces.md)
 
