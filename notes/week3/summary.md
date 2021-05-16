@@ -1,4 +1,4 @@
-# Exercise 3: Intro to Reach
+# Exercise 3: Intro to React
 
 This exercise we'll cover the basics of [React.js](https://reactjs.org).
 
