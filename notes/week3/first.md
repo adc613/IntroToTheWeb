@@ -5,11 +5,14 @@ that pretty much does everything for us.
 
 ## Initializing React app
 
+You'll want to do these steps in a new folder
+
 1. `npx create-react-app codenext --template typescript`
 1. `npm run start`
 
 If done right the browser should magically open and you'll see a spinning React
-logo.
+logo. If not, the terminal should print out a URL (ex: http://localhost:3000) that
+can preview your site at.
 
 ## Making changes
 
