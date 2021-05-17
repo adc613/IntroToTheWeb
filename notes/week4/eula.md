@@ -8,10 +8,10 @@ entering entering the website.
 
 Here are the requirements:
 
-[ ] Eula components should have a very long Terms of Service
-[ ] Should live on the `/eula` route
-[ ] The landing page should link to the `/eula` route before opening the feed
-[ ] The page should link to `/feed` once you've agreed to the Terms of Servcie
-[ ] The user should not be allowed to leave the page without agreeing to the 
+- [ ] Eula components should have a very long Terms of Service
+- [ ] Should live on the `/eula` route
+- [ ] The landing page should link to the `/eula` route before opening the feed
+- [ ] The page should link to `/feed` once you've agreed to the Terms of Servcie
+- [ ] The user should not be allowed to leave the page without agreeing to the 
     Terms of Service.
 

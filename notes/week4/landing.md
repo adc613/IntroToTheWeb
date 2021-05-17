@@ -21,4 +21,4 @@ create our landing page.
 
 
 
-[Next Exercise: Eula](/notes/week4/eula.md)
+[Next Exercise: Not found page](/notes/week4/not_found.md)

@@ -47,3 +47,5 @@ If your a member of the group you can now clone the groups repository.
 1. Click `Clone from GitHub`
 1. Search for your partners <username>/<repository name>
 1. Save the repository to your `Desktop` folder so that it's easy to find
+
+[Next Exercise: Landing page](/notes/week4/landing.md)
