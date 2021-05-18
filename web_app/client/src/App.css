@@ -1,0 +1,82 @@
+body {
+  background-color: #EEEEEE;
+  margin: 0;
+  padding: 0;
+}
+.mainBody {
+  padding: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}
+nav {
+  background-color: blue;
+  padding: 10px;
+}
+.navButton {
+  background-color: #EEEEEE;
+  border: none;
+  min-width: 120px;
+  font-size: 20px;
+  margin-right: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#homeIcon {
+  margin-right: 3px;
+}
+#listIcon {
+  margin-right: 5px;
+}
+#welcomeTo {
+  text-align: left;
+  font-size: 27px;
+  font-family: "Brush Script MT";
+}
+#adamAndPeter {
+  text-align: center;
+  font-size: 75px;
+  font-family: "Brush Script MT";
+  line-height: 0px;
+  margin: 40px;
+}
+#socialMediaSite {
+  text-align: right;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+}
+#adamPic {
+  width: 297px;
+  margin-right: 1px;
+  border-style: solid;
+  border-color: darkblue;
+  border-width: 1px;
+}
+#peterPic {
+  width: 297px;
+  margin-left: 1px;
+  border-style: solid;
+  border-color: darkblue;
+  border-width: 1px;
+}
+#proceed {
+  text-align: center;
+  font-size: 35px;
+}
+#contentTextarea {
+  width: 100%;
+  min-height: 75px;
+  min-width: 100%;
+  max-width: 100%;
+}
+#postButton {
+  float: right;
+}
+.postBody {
+  font-size: 35px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}

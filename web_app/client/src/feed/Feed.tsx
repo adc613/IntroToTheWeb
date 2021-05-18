@@ -1,5 +1,7 @@
 import {FormEvent, Component, ChangeEvent} from 'react';
 import {Post, getPosts, createPost} from '../api';
+import adamHead from "../icons/AdamHead.jpeg"
+import peterHead from "../icons/PeterHead.jpeg"
 
 interface FeedState {
   isLoading: boolean;
@@ -44,31 +46,34 @@ export class Feed extends Component<{}, FeedState> {
   }
 
   private renderPosts() {
-    const posts = this.state.posts.map(post => {
+    const posts = this.state.posts.reverse().map(post => {
       return (
-        <li>
+        <div>
           <PostComponent content={post.content} author={post.author}>
           </PostComponent>
-        </li>
+        </div>
       );
     });
 
     return (
-      <div>
-        <ul>
-          {posts}
-        </ul>
+      <div className="mainBody">
         <PostForm
           createPostHandler={
             (content: string, author: string) => this.createPostHandler(content, author)}
         >
         </PostForm>
+        <hr />
+        {posts}
       </div>
     );
   }
 
   private renderLoader() {
-    return <h1>Loading....</h1>
+    return (
+      <div className="mainBody">
+        <h1>Loading....</h1>
+      </div>
+    );
   }
 }
 
@@ -78,11 +83,24 @@ interface PostComponentProps {
 }
 
 class PostComponent extends Component<PostComponentProps, {}> {
+
+  chooseWhichHead() {
+    if (this.props.author === "Peter") {
+      return peterHead;
+    } else {
+      return adamHead;
+    }
+  }
+
   render() {
     return (
       <div>
-        <p>{this.props.content}</p>
-        <h2>{this.props.author}</h2>
+        <div>
+          <img src = {this.chooseWhichHead()} height="50px"/>&nbsp;&nbsp;
+          {this.props.author}
+        </div>
+        <p className="postBody">{this.props.content}</p>
+        <hr />
       </div>
     );
   }
@@ -120,27 +138,31 @@ class PostForm extends Component<PostFormProps, PostFormState> {
 
   render() {
     return (
-      <form onSubmit={(event) => this.submitPost(event)}>
-        <div>
-          <label>Content</label>
-          <textarea
-            value={this.state.content}
-            onChange={(event) => {this.setContent(event)}}
-          >
-          </textarea>
-        </div>
+      <div>
+        <form onSubmit={(event) => this.submitPost(event)}>
+          <div>
+            <textarea
+              id="contentTextarea"
+              value={this.state.content}
+              placeholder="Create a new post..."
+              onChange={(event) => {this.setContent(event)}}
+            >
+            </textarea>
+          </div>
 
-        <div>
-          <label>Author</label>
-          <input
-            type="text"
-            value={this.state.author}
-            onChange={(event) => {this.setAuthor(event)}}
-          />
-        </div>
-
-        <button type="submit">Create Post</button>
-      </form>
+          <div>
+            <label>Who's posting? </label>
+            <select
+              value={this.state.author}
+              onChange={(event) => {this.setAuthor(event)}}
+            >
+              <option value="Adam">Adam</option>
+              <option value="Peter">Peter</option>
+            </select>
+            <button id="postButton" type="submit">Post</button>
+          </div>
+        </form>
+      </div>
     );
   }
 
@@ -151,7 +173,7 @@ class PostForm extends Component<PostFormProps, PostFormState> {
     });
   }
 
-  private setAuthor(event: ChangeEvent<HTMLInputElement>) {
+  private setAuthor(event: ChangeEvent<HTMLSelectElement>) {
     this.setState({
       content: this.state.content,
       author: event.target.value,
