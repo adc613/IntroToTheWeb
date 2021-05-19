@@ -9,11 +9,11 @@ Router will decide which component to render.
 First run
 
 ```sh
-npm install react-router
+npm install react-router-dom
 ```
 
 ```sh
-npm install react-router-dom
+npm i --save-dev @types/react-router-dom
 ```
 
 
