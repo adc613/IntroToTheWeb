@@ -28,16 +28,14 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <header className="App-header">
-          <Switch>
-            <Route path="/post">
-              <Post author="Adam" content="My first post"></Post>
-            </Route>
-            <Route path="/">
-              <MyFirstComponent></MyFirstComponent>
-            </Route>
-          </Switch>
-        </header>
+        <Switch>
+          <Route path="/post">
+            <Post author="Adam" content="My first post"></Post>
+          </Route>
+          <Route path="/">
+            <MyFirstComponent></MyFirstComponent>
+          </Route>
+        </Switch>
       </div>
     </Router>
   );
