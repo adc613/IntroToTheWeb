@@ -7,6 +7,7 @@ This exercise we'll cover the basics of [React.js](https://reactjs.org).
 2. [Posts](/notes/week4/posts.md)
 3. [Not Found](/notes/week4/not_found.md)
 4. [Eula](/notes/week4/eula.md)
+5. (Optional) [Image Uploading](/notes/week4/image_upload.md)
 
 
 [Next Exercise: GitHub Repo](/notes/week4/repo.md)
