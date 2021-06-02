@@ -3,7 +3,7 @@ However, you should add more content in your posts than just a string field.
 
 ```typescript
 interface Post {
-  content: String
+  content: string
 }
 
 interface PostPageState {
@@ -11,12 +11,13 @@ interface PostPageState {
 }
  
 class PostPage extends React.Component<{}, PostPageState> {
-  constructor({}) {
-    super({});
+  constructor(props) {
+    super(props);
     this.state = {
       posts: [{content: "existing post"}],
     };
   }
+  
   submitPost(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const submittedContent = event.currentTarget.contentField.value;
